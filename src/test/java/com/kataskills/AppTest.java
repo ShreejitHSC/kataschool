@@ -18,4 +18,10 @@ public class AppTest {
         String[] argList = new String[]{""};
         App.main(argList);
     }
+
+    @Test
+    public void testRandomNumber1IsCorrectlyConverted(){
+        int myRandomNumber = 1;
+        assert(App.generateComputerInput(myRandomNumber).equalsIgnoreCase("rock"));
+    }
 }
