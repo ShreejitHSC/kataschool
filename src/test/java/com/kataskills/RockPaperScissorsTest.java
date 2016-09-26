@@ -10,8 +10,8 @@ public class RockPaperScissorsTest {
     @Test
     public void testWhenUserRockComputerScissors(){
         RockPaperScissors rockPaperScissors = new RockPaperScissors();
-        String userInput = "rock";
-        String computerInput = "scissors";
+        String userInput = "ROCK";
+        String computerInput = "SCISSORS";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("User wins"));
     }
 }

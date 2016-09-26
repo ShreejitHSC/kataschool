@@ -12,7 +12,15 @@ public class RockPaperScissors {
         GameOptions.GameInputOptions computerValue = GameOptions.GameInputOptions.valueOf(computerInput);
         GameOptions.GameInputOptions userValue = GameOptions.GameInputOptions.valueOf(userInput);
 
-
+        int Result = computerValue.checkWhoWns(userValue);
+        switch (Result){
+            case 0:
+                return "Draw";
+            case 1:
+                return "Computer wins";
+            case -1:
+                return "User wins";
+        }
         return null;
     }
 }
