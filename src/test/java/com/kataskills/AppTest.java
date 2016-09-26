@@ -12,4 +12,10 @@ public class AppTest {
         String[] argList = new String[]{};
         App.main(argList);
     }
+
+    @Test(expected = Exception.class)
+    public void testArgIsValid() throws Exception {
+        String[] argList = new String[]{""};
+        App.main(argList);
+    }
 }
