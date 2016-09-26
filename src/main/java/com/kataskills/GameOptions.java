@@ -12,5 +12,7 @@ public class GameOptions {
         GameInputOptions(String beatenValue) {
             this.whoIsBeaten = beatenValue;
         }
+
+        int checkWhoWns(GameInputOptions inputOptions) { return inputOptions == this? 0 : inputOptions == valueOf(whoIsBeaten)? 1 : -1; }
     }
 }
