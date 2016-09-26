@@ -21,4 +21,22 @@ public class App {
             throw new Exception("The input provided is not a valid one");
         }
     }
+
+    public static String generateComputerInput(int myRandomNumber) {
+        //Generate a Random number between 1-3
+        String computerValueString = "";
+
+        switch (myRandomNumber){
+            case 1:
+                computerValueString = "rock";
+                break;
+            case 2:
+                computerValueString = "paper";
+                break;
+            case 3:
+                computerValueString = "scissors";
+                break;
+        }
+        return computerValueString;
+    }
 }
