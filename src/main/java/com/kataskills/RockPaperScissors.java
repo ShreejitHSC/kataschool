@@ -9,8 +9,8 @@ public class RockPaperScissors {
 
 
     public String findWhoWins(String computerInput, String userInput) {
-        GameOptions.GameInputOptions computerValue = GameOptions.GameInputOptions.valueOf(computerInput);
-        GameOptions.GameInputOptions userValue = GameOptions.GameInputOptions.valueOf(userInput);
+        GameOptions.GameInputOptions computerValue = GameOptions.GameInputOptions.valueOf(computerInput.toUpperCase());
+        GameOptions.GameInputOptions userValue = GameOptions.GameInputOptions.valueOf(userInput.toUpperCase());
 
         int Result = computerValue.checkWhoWns(userValue);
         switch (Result){

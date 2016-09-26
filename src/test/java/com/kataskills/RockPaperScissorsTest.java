@@ -1,5 +1,6 @@
 package com.kataskills;
 
+import org.junit.Before;
 import org.junit.Test;
 
 /**
@@ -7,11 +8,20 @@ import org.junit.Test;
  */
 public class RockPaperScissorsTest {
 
+    RockPaperScissors rockPaperScissors;
+
+    @Before
+    public void before() {
+        rockPaperScissors = new RockPaperScissors();
+    }
+
     @Test
     public void testWhenUserRockComputerScissors(){
-        RockPaperScissors rockPaperScissors = new RockPaperScissors();
         String userInput = "ROCK";
         String computerInput = "SCISSORS";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("User wins"));
     }
+
+    
+
 }
