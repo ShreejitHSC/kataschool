@@ -13,6 +13,6 @@ public class GameOptions {
             this.whoIsBeaten = beatenValue;
         }
 
-        int checkWhoWns(GameInputOptions inputOptions) { return inputOptions == this? 0 : inputOptions == valueOf(whoIsBeaten)? 1 : -1; }
+        int checkWhoWins(GameInputOptions inputOptions) { return inputOptions == this? 0 : inputOptions == valueOf(whoIsBeaten)? 1 : -1; }
     }
 }

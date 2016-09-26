@@ -1,7 +1,5 @@
 package com.kataskills;
 
-import org.codehaus.plexus.util.StringUtils;
-
 /**
  * Created by skakk2 on 9/26/2016.
  */
@@ -12,7 +10,7 @@ public class RockPaperScissors {
         GameOptions.GameInputOptions computerValue = GameOptions.GameInputOptions.valueOf(computerInput.toUpperCase());
         GameOptions.GameInputOptions userValue = GameOptions.GameInputOptions.valueOf(userInput.toUpperCase());
 
-        int Result = computerValue.checkWhoWns(userValue);
+        int Result = computerValue.checkWhoWins(userValue);
         switch (Result){
             case 0:
                 return "Draw";
