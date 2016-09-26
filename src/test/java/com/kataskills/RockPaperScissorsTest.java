@@ -16,63 +16,63 @@ public class RockPaperScissorsTest {
     }
 
     @Test
-    public void testWhenUserRockComputerScissors(){
+    public void userWinsWhenUserRockComputerScissors(){
         String userInput = "ROCK";
         String computerInput = "SCISSORS";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("User wins"));
     }
 
     @Test
-    public void testWhenUserRockComputerPaper() {
+    public void computerWinsWhenUserRockComputerPaper() {
         String userInput = "rock";
         String computerInput = "paper";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("Computer wins"));
     }
 
     @Test
-    public void testWhenUserRockComputerRock() {
+    public void noOneWinsWhenUserRockComputerRock() {
         String userInput = "rock";
         String computerInput = "rock";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("Draw"));
     }
 
     @Test
-    public void testWhenUserPaperComputerRock() {
+    public void userWinsWhenUserPaperComputerRock() {
         String userInput = "paper";
         String computerInput = "rock";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("User wins"));
     }
 
     @Test
-    public void testWhenUserPaperComputerScissors() {
+    public void computerWinsWhenUserPaperComputerScissors() {
         String userInput = "paper";
         String computerInput = "scissors";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("Computer wins"));
     }
 
     @Test
-    public void testWhenUserPaperComputerPaper() {
+    public void noOneWinsWhenUserPaperComputerPaper() {
         String userInput = "paper";
         String computerInput = "paper";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("Draw"));
     }
 
     @Test
-    public void testWhenUserScissorsComputerRock() {
+    public void computerWinsWhenUserScissorsComputerRock() {
         String userInput = "scissors";
         String computerInput = "rock";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("Computer wins"));
     }
 
     @Test
-    public void testWhenUserScissorsComputerPaper() {
+    public void userWinsWhenUserScissorsComputerPaper() {
         String userInput = "scissors";
         String computerInput = "paper";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("User wins"));
     }
 
     @Test
-    public void testWhenUserScissorsComputerScissors() {
+    public void noOneWinsWhenUserScissorsComputerScissors() {
         String userInput = "scissors";
         String computerInput = "scissors";
         assert (rockPaperScissors.findWhoWins(computerInput, userInput).equalsIgnoreCase("Draw"));

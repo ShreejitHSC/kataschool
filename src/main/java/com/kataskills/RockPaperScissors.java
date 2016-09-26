@@ -10,8 +10,8 @@ public class RockPaperScissors {
         GameOptions.GameInputOptions computerValue = GameOptions.GameInputOptions.valueOf(computerInput.toUpperCase());
         GameOptions.GameInputOptions userValue = GameOptions.GameInputOptions.valueOf(userInput.toUpperCase());
 
-        int Result = computerValue.checkWhoWins(userValue);
-        switch (Result){
+        int result = computerValue.checkWhoWins(userValue);
+        switch (result){
             case 0:
                 return "Draw";
             case 1:

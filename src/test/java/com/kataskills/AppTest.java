@@ -1,6 +1,7 @@
 package com.kataskills;
 
 import org.junit.Test;
+import static org.junit.Assert.*;
 
 /**
  * Created by JC87 on 9/26/2016.
@@ -8,13 +9,13 @@ import org.junit.Test;
 public class AppTest {
 
     @Test(expected = Exception.class)
-    public void testArgsLength() throws Exception {
+    public void exceptionExpectedForNoArgument() throws Exception {
         String[] argList = new String[]{};
         App.main(argList);
     }
 
     @Test(expected = Exception.class)
-    public void testArgIsValid() throws Exception {
+    public void exceptionExpectedForInvalidArgument() throws Exception {
         String[] argList = new String[]{""};
         App.main(argList);
     }
