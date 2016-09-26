@@ -22,6 +22,6 @@ public class AppTest {
     @Test
     public void testRandomNumber1IsCorrectlyConverted(){
         int myRandomNumber = 1;
-        assert(App.generateComputerInput(myRandomNumber).equalsIgnoreCase("rock"));
+        assert(App.generateComputerInput(myRandomNumber).equals(GameOptions.GameInputOptions.ROCK));
     }
 }

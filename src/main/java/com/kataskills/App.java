@@ -22,21 +22,17 @@ public class App {
         }
     }
 
-    public static String generateComputerInput(int myRandomNumber) {
+    public static GameOptions.GameInputOptions generateComputerInput(int myRandomNumber) {
         //Generate a Random number between 1-3
-        String computerValueString = "";
 
         switch (myRandomNumber){
             case 1:
-                computerValueString = "rock";
-                break;
+                return GameOptions.GameInputOptions.ROCK;
             case 2:
-                computerValueString = "paper";
-                break;
+                return GameOptions.GameInputOptions.PAPER;
             case 3:
-                computerValueString = "scissors";
-                break;
+                return GameOptions.GameInputOptions.SCISSORS;
         }
-        return computerValueString;
+        return null;
     }
 }
