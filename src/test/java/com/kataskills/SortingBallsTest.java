@@ -15,7 +15,7 @@ public class SortingBallsTest {
 
     @Test
     public void checkYouHaveAEmptyListAtStart(){
-        List<Integer> sortedBallTestList = new ArrayList<Integer>();
+        List<Integer> sortedBallTestList = new ArrayList<>();
         assert(sortedBallTestList.equals(new SortingBalls().sortedBallList));
     }
 }

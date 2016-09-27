@@ -10,6 +10,6 @@ public class SortingBalls {
     public List<Integer> sortedBallList;
 
     public SortingBalls() {
-        sortedBallList = new ArrayList<Integer>();
+        sortedBallList = new ArrayList<>();
     }
 }
