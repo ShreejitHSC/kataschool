@@ -14,8 +14,15 @@ import static org.junit.Assert.*;
 public class SortingBallsTest {
 
     @Test
-    public void checkYouHaveAEmptyListAtStart(){
+    public void verifyYouHaveAEmptyListAtStart(){
         List<Integer> sortedBallTestList = new ArrayList<>();
-        assert(sortedBallTestList.equals(new SortingBalls().sortedBallList));
+        assertEquals(sortedBallTestList,new SortingBalls().sortedBallList);
+    }
+
+    @Test
+    public void verifyTheDrawnBallIsAddedToTheList(){
+        List<Integer> sortedBallTestList = new ArrayList<>();
+        sortedBallTestList.add(0);
+        assertEquals(sortedBallTestList.get(0),new SortingBalls().sortedBallList.get(0));
     }
 }
