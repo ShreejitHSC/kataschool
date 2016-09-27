@@ -51,4 +51,20 @@ public class SortingBallsTest {
 
         assertEquals(sortedBallTestList,sortingBalls.sortedBallList);
     }
+
+    @Test
+    public void verifyThatMoreBallsAreSorted(){
+        List<Integer> sortedBallTestList = new ArrayList<>();
+        SortingBalls sortingBalls = new SortingBalls();
+
+        sortedBallTestList.add(0);
+        sortedBallTestList.add(1);
+        sortedBallTestList.add(2);
+
+        sortingBalls.sortedList(1);
+        sortingBalls.sortedList(2);
+        sortingBalls.sortedList(0);
+
+        assertEquals(sortedBallTestList,sortingBalls.sortedBallList);
+    }
 }
