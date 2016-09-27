@@ -29,8 +29,12 @@ public class SortingBallsTest {
     @Test
     public void verifyThatSortedListContainsMultipleValue(){
         List<Integer> sortedBallTestList = new ArrayList<>();
+        SortingBalls sortingBalls = new SortingBalls();
+
         sortedBallTestList.add(0);
+        assertEquals(sortedBallTestList,sortingBalls.sortedList(0));
+
         sortedBallTestList.add(1);
-        assertEquals(sortedBallTestList,new SortingBalls().sortedList(0));
+        assertEquals(sortedBallTestList,sortingBalls.sortedList(1));
     }
 }

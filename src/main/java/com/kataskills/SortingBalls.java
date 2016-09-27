@@ -16,8 +16,6 @@ public class SortingBalls {
 
     public List<Integer> sortedList(int newBall){
 
-
-
         sortedBallList.add(newBall);
         return sortedBallList;
     }
