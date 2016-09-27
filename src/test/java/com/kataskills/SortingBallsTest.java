@@ -11,7 +11,7 @@ import static org.junit.Assert.*;
 /**
  * Created by JC87 on 9/27/2016.
  */
-public class AppTest {
+public class SortingBallsTest {
 
     @Test
     public void checkYouHaveAEmptyListAtStart(){
