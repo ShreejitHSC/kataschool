@@ -16,7 +16,17 @@ public class SortingBalls {
 
     public List<Integer> sortedList(int newBall){
 
-        sortedBallList.add(newBall);
+        if(sortedBallList.isEmpty())
+            sortedBallList.add(newBall);
+        else{
+            for(int existingValue : sortedBallList){
+                if(newBall <= existingValue){
+                    sortedBallList.set(sortedBallList.indexOf(existingValue),newBall);
+                    newBall = existingValue;
+                }
+            }
+            sortedBallList.add(newBall);
+        }
         return sortedBallList;
     }
 }
