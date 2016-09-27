@@ -23,6 +23,6 @@ public class SortingBallsTest {
     public void verifyTheDrawnBallIsAddedToTheList(){
         List<Integer> sortedBallTestList = new ArrayList<>();
         sortedBallTestList.add(0);
-        assertEquals(sortedBallTestList.get(0),new SortingBalls().sortedBallList.get(0));
+        assertEquals(sortedBallTestList.get(0),new SortingBalls().sortedList().get(0));
     }
 }
