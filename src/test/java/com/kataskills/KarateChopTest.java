@@ -26,4 +26,10 @@ public class KarateChopTest {
         List expectedSortedIntArray = new ArrayList<>(asList(1, 2, 3, 4, 5, 6, 7, 8));
         assertEquals(expectedSortedIntArray,karateChop.sortArray(unsortedArrayList));
     }
+
+    @Test
+    public void verifyAMidValueIsReturned(){
+        List arrayToBeSearched = new ArrayList<>(asList(6,7,8));
+        assertEquals(karateChop.positionOfValue(arrayToBeSearched,karateChop.parameterPassed("7")),1);
+    }
 }

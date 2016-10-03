@@ -16,4 +16,8 @@ public class KarateChop {
         Collections.sort(unsortedIntArray);
         return unsortedIntArray;
     }
+
+    public int parameterPassed(String paramterToBePassed) {
+        return Integer.parseInt(paramterToBePassed);
+    }
 }
