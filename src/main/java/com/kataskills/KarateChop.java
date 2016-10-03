@@ -28,8 +28,12 @@ public class KarateChop {
         int returnPos = -1;
         while(startValue <= endValue){
             int middleValue = (startValue + endValue)/2;
-            if(sortedArrayList.get(middleValue).equals(valueToBeSearched))
+            if((Integer) sortedArrayList.get(middleValue) == (valueToBeSearched))
                 return middleValue;
+            if((Integer) sortedArrayList.get(middleValue) < valueToBeSearched){
+                startValue = middleValue  + 1;
+            }
+
         }
         return returnPos;
     }
