@@ -32,6 +32,8 @@ public class KarateChop {
                 return middleValue;
             if((Integer) sortedArrayList.get(middleValue) < valueToBeSearched){
                 startValue = middleValue  + 1;
+            }else{
+                endValue = endValue - 1;
             }
 
         }
