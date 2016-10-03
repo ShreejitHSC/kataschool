@@ -32,4 +32,10 @@ public class KarateChopTest {
         List arrayToBeSearched = new ArrayList<>(asList(6,7,8));
         assertEquals(karateChop.positionOfValue(arrayToBeSearched,karateChop.parameterPassed("7")),1);
     }
+
+    @Test
+    public void returnThePositionOfTheValueWhichIsOnTheHigherIndexPostion(){
+        List arrayToBeSearched = new ArrayList<>(asList(20,22,21,46,34,65,54));
+        assertEquals(karateChop.positionOfValue(arrayToBeSearched,karateChop.parameterPassed("54")),5);
+    }
 }
