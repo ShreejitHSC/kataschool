@@ -20,4 +20,17 @@ public class KarateChop {
     public int parameterPassed(String paramterToBePassed) {
         return Integer.parseInt(paramterToBePassed);
     }
+
+    public int positionOfValue(List arrayToBeSearched, int valueToBeSearched) {
+        List sortedArrayList = sortArray(arrayToBeSearched);
+        int startValue = 0;
+        int endValue = sortedArrayList.size() - 1;
+        int returnPos = -1;
+        while(startValue <= endValue){
+            int middleValue = (startValue + endValue)/2;
+            if(sortedArrayList.get(middleValue).equals(valueToBeSearched))
+                return middleValue;
+        }
+        return returnPos;
+    }
 }
